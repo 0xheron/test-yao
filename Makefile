@@ -8,7 +8,7 @@ ASM = $(SRC:.cpp=.S)
 BIN = bin
 LIBS = lib/yao/bin/libYao.a
 
-INC_DIR_SRC = -Isrc -I. -Ilib/yao -Ilib/yao/src
+INC_DIR_SRC = -Isrc -I. -Ilib/yao -Ilib/yao/src -Ilib/rsa/include
 
 DEBUGFLAGS = $(INC_DIR_SRC) $(INC_DIR_LIB) -Wall -g
 RELEASEFLAGS = $(INC_DIR_SRC) $(INC_DIR_LIB) -O3
